@@ -186,3 +186,10 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .body{height:540px}
 .navbtns{bottom:14px;right:20px}
 .navbtns button{width:34px;height:34px;font-size:14px}
+
+.mgrid{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:1fr 1fr;gap:10px;height:100%}
+.mcard{position:relative;border-radius:12px;overflow:hidden;background:linear-gradient(180deg,#232633,#14151b);display:flex;align-items:flex-end;justify-content:center}
+.mcard.neon{background:radial-gradient(circle at 50% 80%,rgba(232,121,249,.35),transparent 60%),linear-gradient(180deg,#1a0f2e,#0a0812)}
+.mcard img{position:absolute;inset:8px 0 22px;width:100%;height:calc(100% - 30px);object-fit:contain;object-position:center bottom}
+.mcard span{position:relative;z-index:1;width:100%;text-align:center;font:700 10px/22px ui-monospace,Consolas,monospace;letter-spacing:1px;color:#cfd3dc;background:rgba(0,0,0,.45)}
+@media (max-width:900px){.mgrid{grid-template-rows:220px 220px}}
